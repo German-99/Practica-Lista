@@ -1,0 +1,21 @@
+﻿<Window x:Class="PracticaLista.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticaLista"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="lstAlumnos" HorizontalAlignment="Left" Height="372" VerticalAlignment="Top" Width="161" Margin="10,37,0,0" SelectionChanged="lstAlumnos_SelectionChanged">
+            
+        </ListBox>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Alumnos" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <TextBlock TextWrapping="Wrap" Margin="217,16,421,382" Text="Nombre"/>
+        <TextBlock TextWrapping="Wrap" Width="154" Text="Nombre del alumno" Margin="217,37,421,361" Name="lblNombre"/>
+        <TextBlock TextWrapping="Wrap" Text="Matricula" Margin="217,83,440,315"/>
+        <TextBlock HorizontalAlignment="Left" Margin="217,104,0,0" TextWrapping="Wrap" Text="000000" VerticalAlignment="Top" Name="lblMatricula"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="217,154,0,0"><Run Text="Carrera"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Text="Nombre de Carrera" Margin="210,170,455,222" Name="lblCarrera"/>
+    </Grid>
+</Window>
